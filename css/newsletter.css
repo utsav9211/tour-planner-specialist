@@ -1,0 +1,40 @@
+/* ==========================================================================
+   NEWSLETTER — Subscription section
+   ========================================================================== */
+
+.newsletter {
+    padding: 60px 0;
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+}
+.newsletter h2 { color: #fff; margin-bottom: 10px; }
+.newsletter p { opacity: .85; margin-bottom: 24px; }
+.newsletter-form {
+    display: flex;
+    max-width: 480px;
+    margin: 0 auto;
+    border-radius: 50px;
+    overflow: hidden;
+    background: rgba(255,255,255,.15);
+}
+.newsletter-form input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    padding: 14px 22px;
+    color: #fff;
+    font-size: .95rem;
+}
+.newsletter-form input::placeholder { color: rgba(255,255,255,.5); }
+.newsletter-form input:focus { outline: none; }
+.newsletter-form button {
+    background: var(--accent);
+    border: none;
+    padding: 14px 28px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background .3s;
+}
+.newsletter-form button:hover { background: var(--accent-dark); }

@@ -1,0 +1,111 @@
+/* ==========================================================================
+   TESTIMONIALS — Slider with dots & navigation
+   ========================================================================== */
+
+.testimonials { padding: 80px 0; }
+
+.testimonial-slider {
+    position: relative;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.testimonial-track {
+    display: flex;
+    transition: transform .5s ease;
+}
+.testimonial-card {
+    min-width: 100%;
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+@media (min-width: 700px) {
+    .testimonial-card { min-width: 50%; }
+}
+@media (min-width: 1000px) {
+    .testimonial-card { min-width: 33.333%; }
+}
+.testimonial-inner {
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: var(--card-shadow);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.testimonial-stars {
+    color: #f59e0b;
+    font-size: .95rem;
+    margin-bottom: 12px;
+}
+.testimonial-inner blockquote {
+    font-size: .92rem;
+    color: var(--text-light);
+    flex: 1;
+    margin-bottom: 16px;
+    line-height: 1.7;
+    font-style: italic;
+}
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.testimonial-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: .9rem;
+}
+.testimonial-info strong { font-size: .9rem; display: block; }
+.testimonial-info span { font-size: .78rem; color: var(--text-muted); }
+
+/* Controls */
+.testimonial-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 28px;
+}
+.testimonial-prev,
+.testimonial-next {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--border);
+    background: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+    color: var(--text);
+}
+.testimonial-prev:hover,
+.testimonial-next:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+}
+.testimonial-dots {
+    display: flex;
+    gap: 8px;
+}
+.testimonial-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border);
+    border: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+.testimonial-dot.active { background: var(--accent); transform: scale(1.2); }

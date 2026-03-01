@@ -1,0 +1,31 @@
+/* ==========================================================================
+   STATS — Animated counters section
+   ========================================================================== */
+
+.stats {
+    padding: 60px 0;
+    background: var(--primary);
+    color: #fff;
+}
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 32px;
+    text-align: center;
+}
+.stat-item i {
+    font-size: 2rem;
+    color: var(--accent);
+    margin-bottom: 10px;
+}
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 4px;
+}
+.stat-label {
+    font-size: .9rem;
+    opacity: .8;
+}

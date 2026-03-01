@@ -1,0 +1,33 @@
+/* ==========================================================================
+   TRUST BAR — Badges / certifications strip
+   ========================================================================== */
+
+.trust-bar {
+    background: var(--bg-alt);
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border);
+}
+.trust-bar .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-light);
+    font-size: .85rem;
+    font-weight: 600;
+}
+.trust-item i {
+    font-size: 1.4rem;
+    color: var(--accent);
+}
+
+@media (max-width: 600px) {
+    .trust-bar .container { gap: 20px; }
+    .trust-item { font-size: .78rem; }
+}
